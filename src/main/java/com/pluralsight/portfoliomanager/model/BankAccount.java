@@ -10,11 +10,11 @@ public class BankAccount extends Account {
 
     public void deposit(BigDecimal amount) {
         // TODO: add the amount to the balance
-        getBalance().add(amount);
+        setBalance(getBalance().add(amount));
     }
 
     public void withdraw(BigDecimal amount) {
         // TODO: take the amount out of the balance
-        getBalance().subtract(amount);
+        setBalance(getBalance().subtract(amount));
     }
 }
