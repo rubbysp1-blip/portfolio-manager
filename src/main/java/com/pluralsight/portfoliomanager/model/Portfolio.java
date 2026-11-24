@@ -20,6 +20,7 @@ public class Portfolio implements Valuable{
         assets.add(valuable);
     }
 
+    @Override
     public BigDecimal getValue(){
         BigDecimal totalValue = BigDecimal.ZERO;
         for(Valuable value : assets){
@@ -29,15 +30,15 @@ public class Portfolio implements Valuable{
     }
 
     public Valuable getMostValuable(){
-        Valuable valuable = null;
+        Valuable best = assets.get(0);
         BigDecimal valuePrice = BigDecimal.ZERO;
         for(Valuable value : assets){
             if(value.getValue().compareTo(valuePrice) > 0){
-                valuable = value;
+                best = value;
                 valuePrice = value.getValue();
             }
         }
-        return valuable;
+        return best;
     }
 
     public Valuable getLeastValuable(){
