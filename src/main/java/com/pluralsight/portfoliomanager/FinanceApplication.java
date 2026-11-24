@@ -34,5 +34,7 @@ public class FinanceApplication {
         portfolio.add(creditCard);
 
         System.out.println(portfolio.getValue());
+        System.out.println(portfolio.getMostValuable());
+        System.out.println(portfolio.getMostValuable());
     }
 }
