@@ -13,4 +13,11 @@ public class Jewelry extends FixedAsset {
     public double getKarat() {
         return karat;
     }
+
+//    @Override
+//    public String toString() {
+//        return "JEWELRY| " +
+//                "karat: " + karat +
+//                "value: " + getValue();
+//    }
 }

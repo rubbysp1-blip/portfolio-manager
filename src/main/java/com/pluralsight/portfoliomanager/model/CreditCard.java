@@ -26,8 +26,8 @@ public class CreditCard extends Account {
         return getBalance().negate();
     }
 
-    @Override
-    public String toString() {
-        return "CreditCard: " + getValue();
-    }
+//    @Override
+//    public String toString() {
+//        return "CreditCard: " + getValue();
+//    }
 }

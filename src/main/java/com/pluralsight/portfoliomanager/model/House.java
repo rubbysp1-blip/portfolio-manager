@@ -26,12 +26,12 @@ public class House extends FixedAsset {
         return bedrooms;
     }
 
-    @Override
-    public String toString() {
-        return "HOUSE|" +
-                " yearBuilt: " + yearBuilt +
-                ", squareFeet: " + squareFeet +
-                ", bedrooms: " + bedrooms +
-                ", value: " + getValue();
-    }
+//    @Override
+//    public String toString() {
+//        return "HOUSE|" +
+//                " yearBuilt: " + yearBuilt +
+//                ", squareFeet: " + squareFeet +
+//                ", bedrooms: " + bedrooms +
+//                ", value: " + getValue();
+//    }
 }

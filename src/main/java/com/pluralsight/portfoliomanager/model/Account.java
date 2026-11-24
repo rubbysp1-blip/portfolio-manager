@@ -33,4 +33,11 @@ public abstract class Account implements Valuable{
     public BigDecimal getValue() {
         return balance;
     }
+
+    @Override
+    public String toString() {
+        return "Account| " +
+                " Name: " + name +
+                " Balance: " + balance;
+    }
 }

@@ -19,4 +19,11 @@ public abstract class FixedAsset implements Valuable{
     public BigDecimal getValue() {
         return marketValue;
     }
+
+    @Override
+    public String toString() {
+        return "FixedAsset|" +
+                " Name: " + name +
+                " MarketValue: " + marketValue;
+    }
 }

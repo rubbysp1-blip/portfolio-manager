@@ -17,4 +17,9 @@ public class BankAccount extends Account {
         // TODO: take the amount out of the balance
         setBalance(getBalance().subtract(amount));
     }
+
+//    @Override
+//    public String toString() {
+//        return "BankAccount| " + getValue();
+//    }
 }
