@@ -10,7 +10,7 @@ The methods available for account1 is anything that is in the BankAccount Class.
 #### What methods are available for account2?
 The methods available for account2 is in Valuable which is only getValue.
 
-#### Why does that make sense? what it lets a portfolio hold.
+#### Make Portfolio implement Valuable, like the finished diagram. Why does that make sense? what it lets a portfolio hold.
 It makes sense because all items have a value but not every item is the same.
 So, portfolio is able to implement valuable as the same as the other two parent classes.
 
