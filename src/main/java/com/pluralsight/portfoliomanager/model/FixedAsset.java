@@ -24,6 +24,6 @@ public abstract class FixedAsset implements Valuable{
     public String toString() {
         return "FixedAsset|" +
                 " Name: " + name +
-                " MarketValue: " + marketValue;
+                " MarketValue: " + getValue();
     }
 }

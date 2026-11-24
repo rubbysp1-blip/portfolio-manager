@@ -38,6 +38,6 @@ public abstract class Account implements Valuable{
     public String toString() {
         return "Account| " +
                 " Name: " + name +
-                " Balance: " + balance;
+                " Balance: " + getValue();
     }
 }
