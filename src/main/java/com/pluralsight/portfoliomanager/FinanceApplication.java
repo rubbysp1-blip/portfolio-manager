@@ -3,6 +3,7 @@ package com.pluralsight.portfoliomanager;
 import com.pluralsight.portfoliomanager.model.*;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 
 public class FinanceApplication {
 
@@ -17,9 +18,9 @@ public class FinanceApplication {
 
         // TODO: Workbook 6a p. 30, Part 2
         BankAccount account1 = new BankAccount(123, "Pam", new BigDecimal("12500"));
-        BankAccount account2 = new BankAccount(456, "Gary", new BigDecimal("1500"));
+        Valuable account2 = new BankAccount(456, "Gary", new BigDecimal("1500"));
         // try to deposit money into both accounts
         account1.deposit(new BigDecimal("100"));
-        account2.deposit(new BigDecimal("100"));
+        //account2.deposit(new BigDecimal("100"));
     }
 }
