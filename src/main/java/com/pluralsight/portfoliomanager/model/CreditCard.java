@@ -25,4 +25,9 @@ public class CreditCard extends Account {
     public BigDecimal getValue(){
         return getBalance().negate();
     }
+
+    @Override
+    public String toString() {
+        return "CreditCard: " + getValue();
+    }
 }

@@ -29,19 +29,26 @@ public class Portfolio {
     }
 
     public Valuable getMostValuable(){
-        Valuable totalValue = null;
-        BigDecimal valuable = BigDecimal.ZERO;
+        Valuable valuable = null;
+        BigDecimal valuePrice = BigDecimal.ZERO;
         for(Valuable value : assets){
-            if(value.getValue().compareTo(valuable) > 0){
-                totalValue = value;
-                valuable = value.getValue();
+            if(value.getValue().compareTo(valuePrice) > 0){
+                valuable = value;
+                valuePrice = value.getValue();
             }
-
         }
-        return totalValue;
+        return valuable;
     }
 
     public Valuable getLeastValuable(){
-        return null;
+        Valuable valuable = null;
+        BigDecimal valuePrice = BigDecimal.ZERO;
+        for(Valuable value : assets){
+            if(value.getValue().compareTo(valuePrice) < 0){
+                valuable = value;
+                valuePrice = value.getValue();
+            }
+        }
+        return valuable;
     }
 }
