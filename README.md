@@ -10,10 +10,14 @@ The methods available for account1 is anything that is in the BankAccount Class.
 #### What methods are available for account2?
 The methods available for account2 is in Valuable which is only getValue.
 
+#### Why does that make sense? what it lets a portfolio hold.
+It makes sense because all items have a value but not every item is the same.
+So, portfolio is able to implement valuable as the same as the other two parent classes.
+
 ## How to run it
 
 1. Clone the repository and open it in IntelliJ
-2. Run `[App].java`
+2. Run `App.java`
 
 ## Screenshots
 
