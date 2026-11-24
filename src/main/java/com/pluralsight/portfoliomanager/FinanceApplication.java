@@ -4,6 +4,7 @@ import com.pluralsight.portfoliomanager.model.*;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.List;
 
 public class FinanceApplication {
 
@@ -22,5 +23,16 @@ public class FinanceApplication {
         // try to deposit money into both accounts
         account1.deposit(new BigDecimal("100"));
         //account2.deposit(new BigDecimal("100"));
+
+        Portfolio portfolio = new Portfolio("Rubi", "Ruby");
+        BankAccount bankAccount = new BankAccount(134562, "Chase", new BigDecimal("5000"));
+        CreditCard creditCard = new CreditCard(1264532, "Chase", new BigDecimal("220"));
+        portfolio.add(house);
+        portfolio.add(gold);
+        portfolio.add(ring);
+        portfolio.add(bankAccount);
+        portfolio.add(creditCard);
+
+        System.out.println(portfolio.getValue());
     }
 }

@@ -1,5 +1,7 @@
 package com.pluralsight.portfoliomanager.model;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Portfolio {
@@ -10,14 +12,20 @@ public class Portfolio {
     public Portfolio(String name, String owner) {
         this.name = name;
         this.owner = owner;
+        this.assets = new ArrayList<>();
     }
 
-    public void add(Valuable asset){
-
+    public void add(Valuable valuable){
+        //assets = new ArrayList<>();
+        assets.add(valuable);
     }
 
-    public double getValue(){
-        return 0;
+    public BigDecimal getValue(){
+        BigDecimal totalValue = BigDecimal.ZERO;
+        for(Valuable value : assets){
+            totalValue = totalValue.add(value.getValue());
+        }
+        return totalValue;
     }
 
     public Valuable getMostValuable(){
